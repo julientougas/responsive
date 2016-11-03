@@ -1,0 +1,348 @@
+/**************************************************
+Fonts
+Lato
+Lustria
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+#B59481 Brown
+#DCC7B0 Light Brown
+#6888AF Blue
+#D9E7E6 Light Blue
+**************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Lato', helvetica, arial, sans-serif;
+    background-color: #DCC7B0;
+}
+
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+
+.masthead {
+    height: 150px;
+    background-image: url("https://placeimg.com/1600/150/nature");
+}
+
+h1 {
+    font: normal 2.618rem 'Lato', helvetica, arial, sans-serif;
+    position: relative;
+    padding: 10px;
+    color: #fff;
+}
+
+h2 {
+    font: normal 1.618rem 'Lato', helvetica, arial, sans-serif;
+    padding: 0 10px;
+}
+
+p,
+li,
+a {
+    font: normal 0.618rem/1.7 'Lustria', Palatino, serif;
+    text-decoration: none;
+}
+
+pre,
+code,
+kbd {
+    font: normal 1.0rem 'Lustria', Palatino, serif;
+}
+
+
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav>ul {
+    width: 100%;
+    display: inline-block;
+}
+
+nav li {
+    width: 100%;
+    list-style-type: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    font: normal 1.618rem 'Lato', helvetica, arial, sans-serif;
+    text-align: center;
+    color: #6888AF;
+    background-color: #DCC7B0;
+    padding: 3px;
+}
+
+nav a:active,
+nav a:focus,
+nav a:hover {
+    color: #B59481;
+}
+
+main {
+    width: 100%;
+    display:inline-block;
+    margin: 0 auto;
+}
+main p {
+    padding: 0 10px;
+}
+.col {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+    margin: 10px 0;
+    padding: 0 -5px;
+}
+
+footer p {
+    float: right;
+    padding: 3px 10px;
+    margin: 5px;
+    color: #FFF;
+}
+
+footer li {
+    list-style: none;
+    padding: 3px;
+    margin: 5px;
+}
+
+footer a {
+    color: #D9E7E6;
+    font-family: 'Lato', helvetica, arial, sans-serif;
+    padding: 5px;
+}
+
+footer {
+    background-color: #6888AF;
+    width: 100%;
+    display: inline-block;
+}
+
+
+/************
+    MEDIUM
+*************/
+
+@media screen and (min-width:600px) {
+    .masthead {
+        width: 100%;
+        height: 150px;
+/*        background-image: url("https://placeimg.com/800/150/nature");*/
+    }
+    .wrapper {
+        width: 100%;
+        background-color: #DCC7B0;
+    }
+    header {
+        width: 100%;
+    }
+    h1 {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 4.236rem;
+    }
+    h2 {
+        font-size: 1.618rem;
+        padding: 0 10px;
+    }
+    p,
+    li {
+        font-size: 0.6rem;
+        padding: 10px;
+    }
+    a {
+        padding: 10px;
+    }
+    nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+    nav>ul {
+        width: 100%;
+    }
+    nav li {
+        width: 20%;
+        list-style: none;
+        display: inline;
+        float: left;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 1.618rem;
+    }
+    main {
+        width: 90%;
+        background-color: #fff;
+        margin: 0 5%;
+    }
+    .first {
+        width: 50%;
+        text-align: left;
+        float: left;
+    }
+    .second {
+        width: 50%;
+        text-align: left;
+        display: inline-block;
+    }
+    .col img {
+        width: 60%;
+        float: left;
+        margin-right: 15px;
+    }
+    .footer {
+        width: 90%;
+        margin: 0px auto;
+        padding: 5px 0;
+        display: block;
+    }
+}
+
+
+/************
+    LARGE
+*************/
+
+@media screen and (min-width: 800px) {
+    .masthead {
+        width: 100%;
+        height: 150px;
+/*        background-image: url("https://placeimg.com/1200/150/nature");*/
+    }
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #DCC7B0;
+    }
+    li,
+    p,
+    a {
+        font-size: 1rem;
+    }
+    nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+    nav>ul {
+        width: 100%;
+    }
+    nav li {
+        width: 20%;
+        list-style: none;
+        display: inline;
+        float: left;
+    }
+    main {
+        width: 90%;
+        background-color: #fff;
+        margin: 0 5%;
+    }
+    .col img {
+        width: 50%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+
+/************
+      XL
+*************/
+
+@media screen and (min-width: 1200px) {
+    .masthead {
+        width: 100%;
+        height: 150px;
+/*        background-image: url("https://placeimg.com/1600/150/nature");*/
+    }
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #DCC7B0;
+    }
+    h1 {
+        margin: 0;
+    }
+    nav {
+        width: 30%;
+        height: 100%;
+        float: left;
+        position: relative;
+        display: block;
+    }
+    nav>ul {
+        width: 100%;
+    }
+    nav li {
+        width: 100%;
+        list-style: none;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        text-align: left;
+    }
+    main {
+        width: 70%;
+        background-color: #FFF;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+    }
+    .col img {
+        width: 55%;
+    }
+    .footer li {
+        display: flex;
+    }
+    .footer {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+    }
+}
